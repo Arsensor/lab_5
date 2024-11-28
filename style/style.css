@@ -13,7 +13,8 @@ body {
 header {
   background-color: #91ceff;
   padding: 40px;
-  text-align: center;
+  display: flexbox;
+  text-align: right;
   font-size: 45px;
   color: white;
 }
