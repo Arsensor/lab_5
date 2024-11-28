@@ -13,8 +13,7 @@ body {
 header {
   background-color: #91ceff;
   padding: 40px;
-  display: flexbox;
-  text-align: right;
+  text-align: center;
   font-size: 45px;
   color: white;
 }
@@ -82,7 +81,7 @@ h2 {
   margin-top: 10px;
   font-size: 16px;
   color: #fff;
-  background-color: #007bff;
+  background-color: #91ceff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -93,7 +92,7 @@ h2 {
   margin-top: 10px;
   font-size: 16px;
   color: #fff;
-  background-color: #ff0000ac;
+  background-color: #ff4343;
   border: none;
   border-radius: 5px;
   cursor: pointer;
