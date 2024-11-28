@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Игра в магическом доме с приведениями">
+  <meta name="keywords" content="HTML, CSS, JavaScript">
+  <meta name="author" content="Арсений Зайцев">
+  <title>Лабораторная работа №5</title>
+  <link rel="stylesheet" href="style/style.css">
+  <script src="js/script.js"></script>
+  <script src="js/script_bm.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Дом потерянных душ</h1>
+  </header>
+  <main>
+    <nav class="topnav" id="myTopnav">
+      <a href="index.html" class="active">Главная</a>
+      <a href="https://github.com/Arsensor" target="_blank">Мой GitHub</a>
+      <a class="icon" id="menu" onclick="toggleMenu()">&#9776;</a>
+    </nav>
+    <div class="game_content">
+      <img src="assets/images/start.jpg" alt="Изображение этапа игры" class="game_image" id="gameImage">
+      <p class="game_text" id="gameText">Дождь хлестал по лицу Алексея, пробираясь за воротником
+         тонкой куртки. Он заблудился. Лес, казалось, сгущался вокруг него, превращаясь в 
+            непроходимую стену из мокрых стволов и колючих кустов. Внезапно, сквозь пелену 
+              дождя, он увидел силуэт дома. Надежда вспыхнула в груди. Дом выглядел старым, 
+                заброшенным, с покосившимся крыльцом и разбитыми окнами, но это был шанс укрыться 
+                  от непогоды и, возможно, найти дорогу домой.</p>
+      <div class="game_choices" id="gameChoices"></div>
+      <button class="start" id="startButton">Начать игру</button>
+      <button class="restart" id="restartButton" style="display: none;">Перезапустить</button>
+    </div>
+  </main>
+  <footer>
+    <p>Студент Зайцев Арсений, группа ПИЭ-32</p>
+  </footer>
+</body>
+</html>
