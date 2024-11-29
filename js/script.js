@@ -1,11 +1,11 @@
-let steps = [
+let steps = [ //Массив со всеми этапами сюжета
   {
     text: "Алексей толкнул скрипучую дверь и вошел внутрь. В нос ударил\
     запах сырости и плесени. Внутри было темно, лишь слабый свет пробивался\
-    сквозь щели в заколоченных окнах. Чуть дальше была видна потресканная дверь.",
-    image: "assets/images/step_2.jpg",
-    choices: [
-      { text: "Открыть дверь", nextStep: 1 },
+    сквозь щели в заколоченных окнах. Чуть дальше была видна потресканная дверь.", //Текст этапа
+    image: "assets/images/step_2.jpg", //Изображение этапа
+    choices: [ //Действия в этапе
+      { text: "Открыть дверь", next_step: 1 }, //Переход на этап по ID
     ],
   },
   {
@@ -16,8 +16,8 @@ let steps = [
      ржавый топор, успевший покрыться паутиной.",
     image: "assets/images/step_3.jpg",
     choices: [
-      { text: "Обыскать стол", nextStep: 2 },
-      { text: "Извлечь топор", nextStep: 3 },
+      { text: "Обыскать стол", next_step: 2 },
+      { text: "Извлечь топор", next_step: 3 },
     ],
   },
   {
@@ -27,7 +27,7 @@ let steps = [
           перед ним оказалась закрытая дверь с замком, висящем на ручке.",
     image: "assets/images/step_4_k.jpg",
     choices: [
-      { text: "Использовать ключ", nextStep: 4 },
+      { text: "Использовать ключ", next_step: 4 },
     ],
   },
   {
@@ -37,7 +37,7 @@ let steps = [
           перед ним оказалась закрытая дверь с рамком, висящем на ручке.",
     image: "assets/images/step_4_t.jpg",
     choices: [
-      { text: "Срубить замок", nextStep: 5 },
+      { text: "Срубить замок", next_step: 5 },
     ],
   },
   {
@@ -50,7 +50,7 @@ let steps = [
               дневнике, лежал в том самом сейфе и что-то личное от живого человека.",
     image: "assets/images/step_5.jpg",
     choices: [
-      { text: "Вставить ключ, ввести цифры с фотографии, провернуть ключ", nextStep: 6 },
+      { text: "Вставить ключ, ввести цифры с фотографии, провернуть ключ", next_step: 6 },
     ],
   },
   {
@@ -63,7 +63,7 @@ let steps = [
               дневнике, лежал в том самом сейфе и что-то личное от живого человека.",
     image: "assets/images/step_5.jpg",
     choices: [
-      { text: "Попробовать разбить сейф топором", nextStep: 7 },
+      { text: "Попробовать разбить сейф топором", next_step: 7 },
     ],
   },
   {
@@ -73,9 +73,9 @@ let steps = [
            в сторону Алексея. Он стал понимать, что ему необходимо действовать.",
     image: "assets/images/step_6_7.jpg",
     choices: [
-      { text: "Рискнуть и провести ритуал", nextStep: 8 },
-      { text: "Спрятаться под стол", nextStep: 9 },
-      { text: "Бежать на выход", nextStep: 10 },
+      { text: "Рискнуть и провести ритуал", next_step: 8 },
+      { text: "Спрятаться под стол", next_step: 9 },
+      { text: "Бежать на выход", next_step: 10 },
     ],
   },
   {
@@ -85,21 +85,22 @@ let steps = [
            в сторону Алексея. Он стал понимать, что ему необходимо действовать.",
     image: "assets/images/step_6_7.jpg",
     choices: [
-      { text: "Атаковать топором", nextStep: 11 },
-      { text: "Спрятаться под стол", nextStep: 9 },
-      { text: "Бежать на выход", nextStep: 10 },
+      { text: "Атаковать топором", next_step: 11 },
+      { text: "Спрятаться под стол", next_step: 9 },
+      { text: "Бежать на выход", next_step: 10 },
     ],
   },
   {
     text: "Алексей решился на ритуал. Для этого он взял старинную фотографию из комнаты с камином,\
         медальон, а также личную вещь - наручные часы, которые подарил ему близкий друг.\
-          Следуя инструкциям из дневника, он расставил предметы на столе, положив медальон в центр\
-           круга. Он начал читать заклинание, написанное в дневнике. Дом содрогнулся, тень заметалась по\
-            стенам, шепот усилился, превратившись в пронзительный крик. Внезапно все стихло. Тень исчезла.\
-             Дом, казалось, опустел. Алексей почувствовал, как тяжесть свалилась с его плеч. Он вышел из дома,\
-              и на этот раз лес не казался таким мрачным. Он нашел дорогу домой. Но на следующий день Алексей узнал,\
-               что его друг, подаривший ему наручные часы, погиб в автокатастрофе. Алексей понял, что ритуал забрал жизнь\
-                вместо его собственной. Он был свободен, но цена оказалась слишком высокой.", image: "assets/images/final_8.jpg", choices: []
+          Следуя инструкциям из дневника, он расставил предметы на столе, положив медальон\
+           в центр круга. Он начал читать заклинание, написанное в дневнике. Дом содрогнулся,\
+            тень заметалась по стенам, шепот усилился, превратившись в пронзительный крик. Внезапно\
+             все стихло. Тень исчезла. Дом, казалось, опустел. Алексей почувствовал, как тяжесть свалилась\
+              с его плеч. Он вышел из дома, и на этот раз лес не казался таким мрачным. Он нашел дорогу\
+               домой. Но на следующий день Алексей узнал, что его друг, подаривший ему наручные часы,\
+                погиб в автокатастрофе. Алексей понял, что ритуал забрал жизнь вместо его собственной.\
+                 Он был свободен, но цена оказалась слишком высокой.", image: "assets/images/final_8.jpg", choices: [] //Концовка
   },
   {
     text: "Алексей прячется под старым пыльным столом. Тень входит в комнату. Она медленно движется,\
@@ -109,7 +110,7 @@ let steps = [
             Время тянется бесконечно. Алексей не знает, сколько он пробыл под столом – минуты, часы, дни. Он боится\
              пошевелиться, боится выдать себя. В какой-то момент тень, не обнаружив его, покидает комнату. Алексей\
               дожидается, пока все стихнет, и выбирается из-под стола. Он находит окно, выбивает доски и сбегает\
-               из дома", image: "assets/images/final_9.jpg", choices: []
+               из дома", image: "assets/images/final_9.jpg", choices: [] //Концовка
   },
   {
     text: "Алексей, поддавшись инстинкту самосохранения, бросился к входной двери. Тень метнулась за ним,\
@@ -118,31 +119,29 @@ let steps = [
            подобрали, отвезли в ближайший город. Алексей так и не смог объяснить, что произошло в том доме. Он\
             пытался найти его снова, но лес выглядел совсем по-другому, а дома там не было. С тех пор Алексей\
              больше никогда не ходил в лес один. Он знал, что дом Потерянных Душ все еще существует, где-то там,\
-              за гранью реальности, и ждет своих новых жертв.", image: "assets/images/final_10.jpg", choices: []
+              за гранью реальности, и ждет своих новых жертв.", image: "assets/images/final_10.jpg", choices: [] //Концовка
   },
   {
     text: "Алексей бросается на тень, нанося удар за ударом. Все они безуспешны, проходят сквозь тень, не\
          причиняя ей вреда. Она не реагирует на физическое воздействие. Тень обволакивает Алексея, проникая в\
           его сознание. Он чувствует леденящий холод, страх, отчаяние. Тень начинает питаться его жизненной силой.\
            Он не может сопротивляться. Его разум и тело слабеют. Он становится частью дома, его душа\
-            поглощается тенью.", image: "assets/images/final_11.jpg", choices: []
+            поглощается тенью.", image: "assets/images/final_11.jpg", choices: [] //Концовка
   },
 ];
-function update_text(id, text) {
+function update_text(id, text) { //Обновление текста этапа
   let element = document.getElementById(id);
   if (element) {
     element.textContent = text;
   }
 }
-
-function update_image(id, src) {
+function update_image(id, src) { //Обновление картинки этапа
   let element = document.getElementById(id);
   if (element) {
     element.src = src;
   }
 }
-
-function update_choices(id, choices, onChoice) {
+function update_button(id, choices, on_choice) { //Обновление кнопок с действиями этапа
   let container = document.getElementById(id);
   if (container) {
     container.innerHTML = "";
@@ -150,29 +149,28 @@ function update_choices(id, choices, onChoice) {
       let button = document.createElement("button");
       button.textContent = choices[i].text;
       button.className = "game_button";
-      button.onclick = (function (nextStep) {
+      button.onclick = (function (next_step) {
         return function () {
-          onChoice(nextStep);
+          on_choice(next_step);
         };
-      })(choices[i].nextStep);
+      })(choices[i].next_step);
       container.appendChild(button);
     }
   }
 }
-
-function check_step(stepIndex) {
-  let step = steps[stepIndex];
-  update_text("gameText", step.text);
-  update_image("gameImage", step.image);
-  update_choices("gameChoices", step.choices, check_step);
+function check_step(step_number) { //Обновление текста, картинки, кнопок
+  let step = steps[step_number];
+  update_text("gameText", step.text); //Вызов функции
+  update_image("gameImage", step.image); //Вызов функции 
+  update_button("gameChoices", step.choices, check_step); //Вызов функции
 }
-function start_game() {
+function start_game() { //Запуск игры
   document.getElementById("startButton").style.display = "none";
   document.getElementById("restartButton").style.display = "inline";
-  check_step(1);
+  check_step(0);
 };
-function restart_game() {
-  location.reload();
+function restart_game() { //Перезапуск игры
+  location.reload(); //Перезагрузка вкладки
 };
 document.getElementById("startButton").onclick = start_game;
 document.getElementById("restartButton").onclick = restart_game;
