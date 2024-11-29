@@ -23,16 +23,16 @@
       <a class="icon" id="menu" onclick="toggleMenu()">&#9776;</a>
     </nav>
     <div class="game_content">
-      <img src="assets/images/start.jpg" alt="Изображение этапа игры" class="game_image" id="gameImage">
+      <img class="game_image" id="gameImage" src="assets/images/start.jpg" alt="Изображение этапа игры">
       <p class="game_text" id="gameText">Дождь хлестал по лицу Алексея, пробираясь за воротником
-         тонкой куртки. Он заблудился. Лес, казалось, сгущался вокруг него, превращаясь в 
-            непроходимую стену из мокрых стволов и колючих кустов. Внезапно, сквозь пелену 
-              дождя, он увидел силуэт дома. Надежда вспыхнула в груди. Дом выглядел старым, 
-                заброшенным, с покосившимся крыльцом и разбитыми окнами, но это был шанс укрыться 
-                  от непогоды и, возможно, найти дорогу домой.</p>
+        тонкой куртки. Он заблудился. Лес, казалось, сгущался вокруг него, превращаясь в
+        непроходимую стену из мокрых стволов и колючих кустов. Внезапно, сквозь пелену
+        дождя, он увидел силуэт дома. Надежда вспыхнула в груди. Дом выглядел старым,
+        заброшенным, с покосившимся крыльцом и разбитыми окнами, но это был шанс укрыться
+        от непогоды и, возможно, найти дорогу домой.</p>
       <div class="game_choices" id="gameChoices"></div>
-      <button class="start" id="startButton">Начать игру</button>
-      <button class="restart" id="restartButton" style="display: none;">Перезапустить</button>
+      <button class="game_start" id="startButton" onclick="start_game()">Начать игру</button>
+      <button class="game_restart" id="restartButton" style="display: none" onclick="restart_game()">Перезапустить</button>
     </div>
   </main>
   <footer>
