@@ -79,6 +79,16 @@ h2 {
   border-radius: 5px;
   cursor: pointer;
 }
+.game_start:hover {
+  width: 100%;
+  padding: 20px;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #00568c;
+  border-radius: 5px;
+  cursor: pointer;
+}
 .game_restart {
   width: 100%;
   padding: 10px;
@@ -90,8 +100,29 @@ h2 {
   border-radius: 5px;
   cursor: pointer;
 }
+.game_restart:hover {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #ab2d2d;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 .game_button {
   background-color: #0080ffb2;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.game_button:hover {
+  background-color: #00568c;
   color: white;
   padding: 10px 20px;
   border: none;
