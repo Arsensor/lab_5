@@ -158,18 +158,18 @@ function update_button(id, choices, on_choice) { //Обновление кноп
     }
   }
 }
-function check_step(step_number) { //Обновление текста, картинки, кнопок
+function check_step(step_number) { //Обновление этапа
   let step = steps[step_number];
-  update_text("gameText", step.text); //Вызов функции
-  update_image("gameImage", step.image); //Вызов функции 
-  update_button("gameChoices", step.choices, check_step); //Вызов функции
+  update_text("gameText", step.text); 
+  update_image("gameImage", step.image);  
+  update_button("gameChoices", step.choices, check_step); 
 }
-function start_game() { //Запуск игры
+function start_game() { 
   document.getElementById("startButton").style.display = "none";
   document.getElementById("restartButton").style.display = "inline";
   check_step(0);
 };
-function restart_game() { //Перезапуск игры
+function restart_game() {
   location.reload(); //Перезагрузка вкладки
 };
 document.getElementById("startButton").onclick = start_game;
